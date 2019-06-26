@@ -1,3 +1,3 @@
 # portfolio
 
-This is my portfolio thatis a work in progress.
+This is my portfolio that is a work in progress.
