@@ -252,7 +252,7 @@ a.current:visited {
 
  /* ========== ========== photography.html ========== ========== */
 /* --- Camera Section --- */
-#cameras {
+.cameras {
 	background-image: url("./Images/Leaves-BG.jpg"); 
 	background-position: -85px -39px;
 	background-attachment: fixed; 
@@ -305,7 +305,7 @@ a.current:visited {
 }
 
 .slide-cameras h1 {
-	font-size: 2.75rem;
+	font-size: 2.60rem;
 
 	animation: fadeCamera 0.6s;
 }
@@ -316,9 +316,9 @@ a.current:visited {
 	animation: fadeCamera 0.8s;
 }
 
-.slide-cameras img {
+/* .slide-cameras img {
 	width: 50%;
-}
+} */
 
 /* Dots For Camera Gallery */
 #dots-cameras {
@@ -387,23 +387,46 @@ a.current:visited {
 }
 
 .journey h2 {
-	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 
 	text-align: center;
 	font-size: 3rem;
 	color: #fefefe;
 }
 
-.journey p {
-	font-size: 1.5rem;
+.journey img {
+	display: block;
+	width: 151.5px;
+	height: 227.5px;
+
+	border: 0;
 }
 
-#journey-statement {
+#jImage {
+	display: block;
+
 	margin: auto;
-	padding: 15vh 15vw 10vh;
+	/* padding: 6vw 0vw; */
+	width: 151.5px;
+	height: 227.5px;
+
+	text-decoration: none;
 }
-/* --- --- */
+
+.journey figcaption {
+	position: relative;
+	bottom:5rem;
+
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fefefe;
+}
+
+.journey p {
+	margin: auto;
+	padding: 1vh 15vw 10vh;
+	font-size: 1.5rem;
+}
 /* ========== ========== photography.html ========== ========== */
 
 
@@ -449,7 +472,7 @@ footer {
 		background-position: -75px -39px;
 	}
 
-	#cameras {
+	.cameras {
 		background-position: -75px -39px;
 	}
 }
@@ -496,7 +519,7 @@ footer {
 		background-size: cover;
 	}
 
-	#cameras {
+	.cameras {
 		background-position: 0 43px;
 		background-size: cover;
 	}
@@ -563,7 +586,7 @@ footer {
 		background-position: 0 -236px;
 	}
 
-	#cameras {
+	.cameras {
 		background-position: 0 -236px;
 	}
 
@@ -589,7 +612,7 @@ footer {
 		background-position: 0 -180px;
 	}
 
-	#cameras {
+	.cameras {
 		background-position: 0 -180px;
 	}
 
@@ -622,7 +645,7 @@ footer {
 		background-position: 0 -576px;
 	}
 
-	#cameras {
+	.cameras {
 		background-position: 0 -576px;
 	}
 
