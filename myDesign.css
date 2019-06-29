@@ -1,4 +1,3 @@
-
 .container {
 	width: 70%;
 	margin: auto;
@@ -72,6 +71,7 @@ nav {
 
 	font-size: 1.5rem;
 }
+/* --- */
 
 /* Slide Nav */
 .slideNavLinks {
@@ -111,6 +111,7 @@ nav {
 .slideNavLinks a.active { 
 	color: #e6ccb3;
 }
+/* --- */
 
 /* Top Nav */
 .topNavLinks {
@@ -139,6 +140,7 @@ nav {
 a.current:visited {
 	color: #e6ccb3;
 }
+/* --- */
 /* --- --- */
 
 
@@ -251,7 +253,7 @@ a.current:visited {
 
 
  /* ========== ========== photography.html ========== ========== */
-/* --- Camera Section --- */
+/* --- Cameras Section --- */
 .cameras {
 	background-image: url("./Images/Leaves-BG.jpg"); 
 	background-position: -85px -39px;
@@ -264,7 +266,7 @@ a.current:visited {
 	padding: 7.5rem 0;
 }
 
-/* Arrows For Camera Gallery */
+/* Arrows For Camera Slider */
 #arrows-cameras {
 	padding: 3.75rem 0 0 0;
 }
@@ -295,8 +297,9 @@ a.current:visited {
 .prev-cameras:hover, .next-cameras:hover {
 	background-color: rgba(0,0,0,0.8);
 }
+/* --- */
 
-/* Slide Content */
+/* Camera Slider */
 .slide-cameras {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -320,7 +323,6 @@ a.current:visited {
 	width: 50%;
 } */
 
-/* Dots For Camera Gallery */
 #dots-cameras {
 	position: absolute;
 	top: 33rem;
@@ -345,8 +347,9 @@ a.current:visited {
 .active, .dot-cameras:hover {
 	background-color: #717171;
 }
+/* --- */
 
-/* Animations */
+/* Animations For Cameras */
 .fade {
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
@@ -373,12 +376,15 @@ a.current:visited {
 		opacity: 1
 	}
 }
+/* --- */
 /* --- --- */
 
-/* --- Journey Gallery --- */
+
+/* --- Journey Section --- */
 .journey {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
+	min-height: 15rem;
 
 	background-color: rgba(233, 228, 209, 0.7);
 
@@ -386,47 +392,51 @@ a.current:visited {
 	color: #262a24;
 }
 
+/* #journey-statemment {
+	margin: auto;
+	padding: 0 3vw 25vh;
+} */
+
 .journey h2 {
 	margin-bottom: 1.5rem;
 
 	text-align: center;
-	font-size: 3rem;
-	color: #fefefe;
-}
-
-.journey img {
-	display: block;
-	width: 151.5px;
-	height: 227.5px;
-
-	border: 0;
-}
-
-#jImage {
-	display: block;
-
-	margin: auto;
-	/* padding: 6vw 0vw; */
-	width: 151.5px;
-	height: 227.5px;
-
-	text-decoration: none;
-}
-
-.journey figcaption {
-	position: relative;
-	bottom:5rem;
-
-	text-align: center;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #fefefe;
 }
 
 .journey p {
-	margin: auto;
-	padding: 1vh 15vw 10vh;
+	padding: 0 8vw 4vh;
 	font-size: 1.5rem;
 }
+
+.journey img {
+	border: 0;
+}
+
+#jImage {
+	margin-bottom: 2.3rem;
+}
+
+#jImage a {
+	display: block;
+	margin: auto;
+	width: 40%;
+	height: 192px;
+
+	text-decoration: none;
+}
+
+#jImage figcaption {
+	position: relative;
+	bottom: 5rem;
+
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fefefe;
+	text-decoration: underline;
+}
+/* --- --- */
 /* ========== ========== photography.html ========== ========== */
 
 
@@ -475,6 +485,20 @@ footer {
 	.cameras {
 		background-position: -75px -39px;
 	}
+
+	.journey {
+		min-height: 50rem;
+	}
+
+	#jImage {
+		margin-bottom: 2.6rem;
+		height: 196.88px;
+	}
+
+	#jImage a {
+		width: 35%;
+		height: 196.88px;
+	}
 }
 /* --- --- */
 
@@ -487,6 +511,20 @@ footer {
 
 	#camera {
 		background-position: 0 -79px;
+	}
+
+	.journey {
+		min-height: 50rem;
+	}
+
+	#jImage {
+		margin-bottom: 2.6rem;
+		height: 223.13px;
+	}
+
+	#jImage a {
+		width: 35%;
+		height: 223.13px;
 	}
 
 }
@@ -567,6 +605,39 @@ footer {
 		padding: 10vh 8vw 10vh;
 	}
 
+	.journey {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.journey h2 {
+		margin-bottom: 2.5rem;
+
+		/* font-size: 2.0rem; */
+	}
+
+	.journey p {
+		font-size: 1.1rem;
+	}
+
+	#journey-statement {
+		margin: auto;
+		padding: 10vh 1vw 10vh;
+	}
+
+	#jImage {
+		margin-top: 2.6rem;
+		height: 288px;
+	}
+
+	#jImage a {
+		width: 50%;
+		height: 288px;
+	}
+	
+	#jImage figcaption {
+		font-size: 1.1rem;
+	}
+
 	footer {
 		padding: 2rem;
 		font-size: 1.1rem;
@@ -596,6 +667,20 @@ footer {
 
 	.portrait-about img {
 		width: 55%;
+	}
+
+	.journey {
+		min-height: 30rem;
+	}
+
+	#jImage {
+		/* margin-top: 2.9rem; */
+		height: 384px;
+	}
+
+	#jImage a {
+		/* width: 50%; */
+		height: 384px;
 	}
 
 }
