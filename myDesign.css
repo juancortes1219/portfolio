@@ -1,24 +1,18 @@
-.container {
-	width: 70%;
-	margin: auto;
-}
-
 html {
 	box-sizing: border-box;
 
 	font-family: 'Cabin', sans-serif;
-	font-size: 10px;
+	font-size: 14px;
 	color: #fefefe;
+	background-color: transparent;
 }
 
 body { 
 	margin: 0;
-
-	background-image: url("./Images/Marble-BG.jpg");
- 	background-attachment: scroll; 
-	background-position: center;
- 	background-repeat: no-repeat;
-  	background-size: cover;
+	  
+	font-family: 'Cabin', sans-serif;
+	color: #fefefe;
+	background-color: rgb(233, 228, 209);
 } 
 
 h1,
@@ -32,411 +26,133 @@ h1 {
 
 p {
 	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 2rem;
 }
-
-img {
-	max-width: 100%;
-}
-
 
 /* --- Navigation Bar --- */
-.burger {
-	display: block;
-	cursor: pointer;
-}
-
-.burger div {
-	margin: 5px 0 5px 30px;
-	width: 25px;
-	height: 4px;
-
-	background-color: #fefefe;
-}
-
-#logo {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-
-	font-size: 1.75rem;
-	letter-spacing: 2px;
-}
-
-/* Nav Text */
 nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background-color: rgba(76, 122, 156, 0.7);
+	background-color: rgb(76, 122, 156);
 
 	font-size: 1.5rem;
 }
-/* --- */
 
-/* Slide Nav */
-.slideNavLinks {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
+.navbar {
+	padding: 1rem;
 
-	position: absolute;
-	padding-left: 10px;
-	left: 0;
-	height: 75%;
-	top: 52px;
-	background-color: rgba(76, 122, 156, .9);
-
-	transform: translateX(-100%);
-	transition: transform 0.5s ease-in;
-
-	z-index: 1;
+	font-size: 1.4rem;
 }
 
-.slideNavLinks li {
-	opacity: 0;
-	list-style: none;
+.navbar-brand {
+	font-size: 1.7rem;
 }
 
-.slideNavLinks a {
-	text-decoration: none;
-	color: #fefefe;
-}
-
-.slideNavLinks a:hover { 
-	color: #d9b38c; 
-}
-
-.slideNavLinks a.active { 
-	color: #e6ccb3;
-}
-/* --- */
-
-/* Top Nav */
-.topNavLinks {
-	display: none;
-	justify-content: flex-end;
-	width: 100%;
-
-	font-size: 1.2rem;
-}
-
-.topNavLinks li {
-	list-style: none;
-}
-
-.topNavLinks a {
+.navbar a {
 	transition: 0.4s;
-	padding-right: 2rem;
-	text-decoration: none;
 	color: #fefefe;
 }
 
-.topNavLinks a:hover { 
+.navbar a:hover { 
 	color: #d9b38c; 
 }
 
-a.current:visited {
+.nav-link.current {
 	color: #e6ccb3;
 }
-/* --- */
+
+.navbar-toggler-icon {
+	display: inline;
+}	
 /* --- --- */
 
 
 
 /* ========== ========== index.html ========== ========== */
-/* --- Title Section --- */
-#home-parallax {  
-	background-image: url("./Images/Name-BG.jpg"); 
-	background-position: -85px -39px;
-	background-attachment: fixed; 
-	background-repeat: no-repeat; 
-	background-size: auto 600px; 
-
-	min-height: 15rem;
-	margin: auto;
-	padding: 7.5rem 0;
-
-	/*border: 2px solid red;*/
-}
-/* --- --- */
-
-
-/* --- "HI, I'M JUAN CORTES." --- */
-.name-title {
-	text-align: center;
-}
-
-.name-title h1 {
-	font-size: 2.75rem;
-}
-
-.name-title p {
-	margin-bottom: 2rem;
-
-	font-size: 1.75rem;
-}
-/* --- --- */
-
-
-/* --- Buttons --- */
-.btn {
+/* --- Jumbotron --- */
+/* Buttons */
+.btn-primary {
 	transition: 0.4s;
-	display: block;
 
-	width: 50%;
+	width: 12rem;
 
-	margin: auto;
-	margin-bottom: 1rem;
-	padding: 1rem 1.4rem;
+	border: 2px solid rgba(255, 255, 255, 1);
 
-	text-align: center;
-	text-decoration: none;
-	font-size: 1.25rem;
-	color: #fefefe;
-
-	border: 2px solid #fefefe;
+	background-color: rgba(105, 101, 84, 0.5);
 }
 
 .btn:hover {
 	background-color: #696554;
 	border: 2px solid #696554;
+	color: #fefefe;
 }
 
 .btn a:after {
 	color: #fefefe;
 }
+
+.btn:last-child {
+	margin-right: 0;
+}
+/* --- */
+
+.jumbotron {
+	margin-bottom: 0rem;
+	height: 44rem;
+
+	background-image: url("./Images/Name-BG.jpg");
+	background-position: center;
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+    background-size: cover;
+}
 /* --- --- */
 
 
+
 /* --- Portrait and About Section --- */
-.portrait-about {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-
-	background-color: rgba(233, 228, 209, 0.7);
-
-	text-align: justify;
-	color: #262a24;
-}
-
-.portrait-about img {
-	display: block;
-	width: 50%;
-
-	margin: auto;
-	padding: 10vw 10vw;
-}
-
-.portrait-about h2 {
-	margin-top: 0;
-	margin-bottom: 1rem;
-
-	text-align: center;
-	font-size: 3rem;
+h2 {
 	color: #fefefe;
 }
 
-.portrait-about p {
-	font-size: 1.5rem;
+.container.marketing {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
 }
 
-/* About Box Content*/
-#about-para {
-	margin: auto;
-	padding: 0 8vw 25vh;
+.lead {
+	margin-bottom: 2rem;
+
+	color: #262a24;
 }
 /* --- --- */
 /* ========== ========== index.html ========== ========== */
 
 
 
- /* ========== ========== photography.html ========== ========== */
-/* --- Cameras Section --- */
-.cameras {
-	background-image: url("./Images/Leaves-BG.jpg"); 
-	background-position: -85px -39px;
+
+/* ========== ========== photography.html ========== ========== */
+.carousel-inner {
+	background-image: url("./Images/Leaves-BG.jpg");
+	background-position: center;
 	background-attachment: fixed; 
 	background-repeat: no-repeat; 
-	background-size: auto 600px; 
-
-	min-height: 15rem;
-	margin: auto;
-	padding: 7.5rem 0;
+    background-size: cover;
 }
 
-/* Arrows For Camera Slider */
-#arrows-cameras {
-	padding: 3.75rem 0 0 0;
+.carousel-item {
+	height: 32rem;
 }
 
-.prev-cameras, .next-cameras {
-	cursor: pointer;
-	user-select: none;
-
-	position: absolute;
-
-	width: auto;
-	padding: 1rem;
-
-	font-weight: bold;
-	font-size: 18px;
-	color: white;
-
-	border-radius: 0 3px 3px 0;
-
-	transition: 0.6s ease;
+.carousel-caption {
+    /* bottom: 4rem; */
+    z-index: 10;
 }
 
-.next-cameras {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+.carousel-text {
+	color: #ffffff;
 }
-
-.prev-cameras:hover, .next-cameras:hover {
-	background-color: rgba(0,0,0,0.8);
-}
-/* --- */
-
-/* Camera Slider */
-.slide-cameras {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-
-	text-align: center;
-}
-
-.slide-cameras h1 {
-	font-size: 2.60rem;
-
-	animation: fadeCamera 0.6s;
-}
-
-.slide-cameras p {
-	font-size: 1.75rem;
-
-	animation: fadeCamera 0.8s;
-}
-
-/* .slide-cameras img {
-	width: 50%;
-} */
-
-#dots-cameras {
-	position: absolute;
-	top: 33rem;
-	right: 13.675rem;
-	left: 13.675rem;
-}
-
-.dot-cameras {
-	cursor: pointer;
-
-	display: inline-block;
-	width: 1rem;
-	height: 1rem;
-	margin: 0 2px;
-
-	background-color: #bbb;
-	border-radius: 50%;
-	
-	transition: background-color 0.6s ease;
-}
-
-.active, .dot-cameras:hover {
-	background-color: #717171;
-}
-/* --- */
-
-/* Animations For Cameras */
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-
-@keyframes fade {
-	from {opacity: .4} 
-	to {opacity: 1}
-}
-
-@keyframes fadeCamera {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1
-	}
-}
-/* --- */
-/* --- --- */
-
-
-/* --- Journey Section --- */
-.journey {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	min-height: 15rem;
-
-	background-color: rgba(233, 228, 209, 0.7);
-
-	text-align: justify;
-	color: #262a24;
-}
-
-/* #journey-statemment {
-	margin: auto;
-	padding: 0 3vw 25vh;
-} */
-
-.journey h2 {
-	margin-bottom: 1.5rem;
-
-	text-align: center;
-	font-size: 2rem;
-	color: #fefefe;
-}
-
-.journey p {
-	padding: 0 8vw 4vh;
-	font-size: 1.5rem;
-}
-
-.journey img {
-	border: 0;
-}
-
-#jImage {
-	margin-bottom: 2.3rem;
-}
-
-#jImage a {
-	display: block;
-	margin: auto;
-	width: 40%;
-	height: 192px;
-
-	text-decoration: none;
-}
-
-#jImage figcaption {
-	position: relative;
-	bottom: 5rem;
-
-	text-align: center;
-	font-size: 1.5rem;
-	color: #fefefe;
-	text-decoration: underline;
-}
-/* --- --- */
 /* ========== ========== photography.html ========== ========== */
 
 
@@ -444,7 +160,7 @@ a.current:visited {
 /* --- Footer Section --- */
 footer {
 	display: grid;
-	padding: 3rem;
+	padding: 1rem;
 
 	background-color: rgba(151, 145, 125, 0.6);
 
@@ -454,299 +170,79 @@ footer {
 /* --- --- */
 
 
-/* --- Navigation Bar Animation --- */
-.nav-active {
-	transform: translateX(0%);
-}
-
-@keyframes fadeIn {
-	0% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(-10px);
-	}
-}
-/* --- --- */
 
 
 
-
-/* ========== ========== Media Queries (Mobile First) ========== =========== */
-/* --- 375px and Above --- */
-@media screen and (min-width: 375px) {
-	#home-parallax {
-		background-position: -75px -39px;
-	}
-
-	.cameras {
-		background-position: -75px -39px;
-	}
-
-	.journey {
-		min-height: 50rem;
-	}
-
-	#jImage {
-		margin-bottom: 2.6rem;
-		height: 196.88px;
-	}
-
-	#jImage a {
-		width: 35%;
-		height: 196.88px;
-	}
-}
-/* --- --- */
-
-/* --- 425px and Above --- */
-@media screen and (min-width: 425px) {
-
-	#home-parallax {
-		background-position: 0 -79px;
-	}
-
-	#camera {
-		background-position: 0 -79px;
-	}
-
-	.journey {
-		min-height: 50rem;
-	}
-
-	#jImage {
-		margin-bottom: 2.6rem;
-		height: 223.13px;
-	}
-
-	#jImage a {
-		width: 35%;
-		height: 223.13px;
-	}
-
-}
-/* --- --- */
-
-/* --- 768px and Above --- */
-@media screen and (min-width: 768px) {
-
-	html {
-		font-size: 14px;
-	}
-
-	.burger {
-		display: none;
-	}
-
-	#logo {
-		display: flex;
-		justify-content: flex-start;
-
-		margin-left: 4rem;
-	}
-
-	.topNavLinks { 
-		display: flex;
-	}
-
-	#home-parallax {
-		background-position: 0 43px;
-		background-size: cover;
-	}
-
-	.cameras {
-		background-position: 0 43px;
-		background-size: cover;
-	}
-
-	.btn-container {
-		display: flex;
-		justify-content: center;
-		height: 41.77px;
-		margin: auto;
-	}
-
-	.btn {
-		display: block;
-		float: left;
-		width: 10rem;
-
-		margin: 0 1rem 0 0;
-		padding: .6rem 0rem;
-
-		font-size: 1.1rem;
-	}
-
-	.btn:last-child {
-		margin-right: 0;
-	}
-
-	.portrait-about {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.portrait-about img {
-		width: 70%;
-	}
-
-	.portrait-about h2 {
-		font-size: 2.5rem;
-	}
-
-	.portrait-about p {
-		font-size: 1.1rem;
-	}
-
-	#about-para {
-		margin: auto;
-		padding: 10vh 8vw 10vh;
-	}
-
-	.journey {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.journey h2 {
-		margin-bottom: 2.5rem;
-
-		/* font-size: 2.0rem; */
-	}
-
-	.journey p {
-		font-size: 1.1rem;
-	}
-
-	#journey-statement {
-		margin: auto;
-		padding: 10vh 1vw 10vh;
-	}
-
-	#jImage {
-		margin-top: 2.6rem;
-		height: 288px;
-	}
-
-	#jImage a {
-		width: 50%;
-		height: 288px;
+/* ========== ========== Media Queries ========== ========== */
+@media (min-width: 320px) {
+	.container {
+		max-width: 18rem;
 	}
 	
-	#jImage figcaption {
-		font-size: 1.1rem;
+	.carousel-inner {
+		height: 50rem;
+	}
+	
+	.carousel-caption {
+		top: 22rem;
+		bottom: 22rem;
 	}
 
-	footer {
-		padding: 2rem;
-		font-size: 1.1rem;
+	.carousel-alignL {
+		text-align: center;
+	}
+
+	.carousel-alignR {
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.container {
+		padding-top: 4rem;
+	}
+
+	.container.marketing {
+		padding-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-top: 8rem;
+		max-width: 45rem;
+	}
+
+	.carousel-inner {
+		height: 30rem;
+	}
+
+	.carousel-caption {
+		top: 12rem;
+		bottom: 12rem;
+	}
+
+
+	.carousel-alignL {
+		text-align: left;
+	}
+
+	.carousel-alignR {
+		text-align: right;
 	}
 
 }
-/* --- ---*/
 
-/* --- 1024px and Above --- */
-@media screen and (min-width: 1024px) {
-
-	html {
-		font-size: 15px;
+@media (min-width: 992px) {
+	.container {
+		padding-top: 8rem;
+		max-width: 70rem;
 	}
-
-	#home-parallax {
-		background-position: 0 -236px;
-	}
-
-	.cameras {
-		background-position: 0 -236px;
-	}
-
-	.btn {
-		width: 8rem;
-	}
-
-	.portrait-about img {
-		width: 55%;
-	}
-
-	.journey {
-		min-height: 30rem;
-	}
-
-	#jImage {
-		/* margin-top: 2.9rem; */
-		height: 384px;
-	}
-
-	#jImage a {
-		/* width: 50%; */
-		height: 384px;
-	}
-
 }
-/* --- --- */
 
-/* --- 1440px and Above --- */
-@media screen and (min-width: 1440px) {
-
-	html {
-		font-size: 18px;
+@media (min-width: 1024px) {
+	.container {
+		max-width: 60rem;
 	}
-
-	#home-parallax {
-		background-position: 0 -180px;
-	}
-
-	.cameras {
-		background-position: 0 -180px;
-	}
-
-	.btn {
-		width: 9rem;
-		height: 1.5rem;
-	}
-
-	.portrait-about img {
-		width: 45%;
-
-		padding: 15vh 15vw;
-	}
-
-	#about-para {
-		padding: 0 8vw 0;
-	}
-
 }
-/* --- --- */
-
-/* --- 2560px and Above --- */
-@media screen and (min-width: 2560px) {
-
-	html {
-		font-size: 25px;
-	}
-
-	#home-parallax {
-		background-position: 0 -576px;
-	}
-
-	.cameras {
-		background-position: 0 -576px;
-	}
-
-	.btn {
-		width: 8.5rem;
-	}
-
-	.portrait-about img {
-		width: 35%;
-
-		padding: 10vh 10vw;
-	}
-
-	#about-para {
-		padding: 0 10vw 0;
-	}
-
-}
-/* --- --- */
+/* ========== ========== Media Queries ========== ========== */
