@@ -7,98 +7,87 @@
 		<meta charset="UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-		<link rel="stylesheet" type="text/css" href="myDesign.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Cabin|Fira+Sans+Condensed|Kanit" rel="stylesheet"> 
-		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="myDesign.css">
+		
+		<script src="https://kit.fontawesome.com/401258b50f.js" crossorigin="anonymous"></script>
       
 	</head> 
 
 	<body> 
 
 		<!-- Navigation Bar --> 
-		<nav>
-			<!-- Menu Toggle -->
-			<div class="burger">
-				<div id="line1"></div>
-				<div id="line2"></div>
-				<div id="line3"></div>
-			</div>
+		<nav class="navbar navbar-expand-sm">
+			<a class="navbar-brand" href="index.html">JC</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon" style="color: #fefefe">
+					<i class="fas fa-bars"></i>
+				</span>
+			</button>
 			
-			<!-- Initials -->
-			<div id="logo">
-				<h4>JC.</h4>
+			<div class="collapse navbar-collapse" id="navbarsExample03">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link current" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Programming</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="photography.html">Photography</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Me</a>
+					</li>
+				</ul>
 			</div>
-
-			<!-- Menu -->
-			<ul class="slideNavLinks">
-				<li> <a class="current" href="index.html">Home</a> </li>
-				<li> <a href="#csc">Programming</a> </li>
-				<li> <a href="photography.html">Photography</a> </li>
-				<li> <a href="#contact">Contact</a></li>
-			</ul>
-
-			<ul class="topNavLinks">
-				<li> <a class="current" href="index.html">Home</a> </li>
-				<li> <a href="#csc">Programming</a> </li>
-				<li> <a href="photography.html">Photography</a> </li>
-				<li> <a href="#contact">Contact</a></li>
-			</ul>
 		</nav>
 		<!--  -->
-
-		<!--Navigation Bar Animation -->
-		<script src="./JS/navAnimation.js"></script>
 		
-		<!-- Home Title Parallax Section -->
-		<section id="home-parallax"> 
+		<!-- Jumbotron Parallax -->
+		<div class="jumbotron text-center">
+			<div class="container">
 
-			<!-- Welcome Box -->
-			<div class="name-title">
-				
-				<div class="container">
+				<h1 class="display-3">HI, MY NAME IS JUAN CORTES.</h1>
+				<p>Programmer and Photographer</p>
 
-					<h1>HI, MY NAME IS JUAN CORTES.</h1>
-					<p>Programmer and Photographer</p>
-
-					<!-- Social Media Buttons -->
-					<div class="btn-container">
-						<a href="https://www.instagram.com/its.juancortes/" class="btn">personal IG</a>
-						<a href="https://www.instagram.com/photogenic.juan/" class="btn">photography IG</a>
-						<a href="https://www.youtube.com/channel/UC7wvxrc3ovMnXcN0kqb67fQ/featured" class="btn">YouTube</a>
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-		<!--  -->
-
-		<!-- Portrait and About Section -->
-		<section class="portrait-about">
-
-			<img id="pImage" src="./Images/Portrait.gif"  align="left">
-
-			<div id="about-para">
-				<h2>ABOUT</h2>
-
+				<!-- Social Media Buttons -->
 				<p>
-					I am a 22 year old in love with Programming, Photography and Jesus.
-					<br>
-					<br>
-					From a taking a basic programming class and my general interest in technology, my love for Programming was sparked during my sophomore year in high school. That said, I decided to attend Georgia State University and major in Computer Science.
-					<br>
-					<br>
-					I didn't get interested in Photography until the summer of 2016. That summer I got the oppurtunity to go on a mission trip with my church to Costa Rica.  Back then I just had my iPhone 6, but I still took many photos. From then on, my love for Photography grew, and now I have a minor in Art (Photography).
+					<a class="btn btn-primary btn-lg" href="https://www.instagram.com/its.juancortes/" role="button">personal IG</a>
+					<a class="btn btn-primary btn-lg" href="https://www.instagram.com/photogenic.juan/" role="button">photography IG</a>
+					<a class="btn btn-primary btn-lg" href="https://www.youtube.com/channel/UC7wvxrc3ovMnXcN0kqb67fQ/featured" role="button">YouTube</a>
 				</p>
+				
 			</div>
-
-		</section>
+		</div>
 		<!--  -->
 
-		<footer>
-			<p>&copy;2018 by Juan Cortes. </p>
-		</footer>
+		<!-- About Section -->
+		<div class="container marketing">
+			<div class="row featurette">
+					<div class="col-md-7 order-md-2">
+						<h2 class="featurette-heading">ABOUT</h2>
+						<p class="lead">I am a 22 year old in love with Programming, Photography and Jesus. From a taking a basic programming class and my general interest in technology, my love for Programming was sparked during my sophomore year in high school. That said, I decided to attend Georgia State University and major in Computer Science. I didn't get interested in Photography until the summer of 2016. That summer I got the oppurtunity to go on a mission trip with my church to Costa Rica.  Back then I just had my iPhone 6, but I still took many photos. From then on, my love for Photography grew, and now I have a minor in Art (Photography).</p>
+					</div>
+					<div class="col-md-5 order-md-1">
+						<p class="text-center">
+							<img src="./Images/Portrait.gif" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+						</p>
+					</div>
+			</div>
+		</div>
+		<!--  -->
+		
+		<!-- <footer>
+			<p>&copy;2019 by Juan Cortes. </p>
+		</footer> -->
+
+		<!-- Scripts -->
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!--  -->
 
 	</body> 
 
