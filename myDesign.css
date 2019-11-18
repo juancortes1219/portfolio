@@ -155,6 +155,10 @@ h2 {
 .carousel-text {
 	color: #ffffff;
 }
+
+.photo-gallery {
+	padding: 4rem;
+}
 /* ========== ========== photography.html ========== ========== */
 
 
@@ -228,6 +232,15 @@ footer {
 	.jumbotron {
 		height: 58rem;
 	}
+
+	.carousel-caption {
+		top: 21rem;
+		bottom: 21rem;
+	}
+
+	.cmr {
+		font-size: 4rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -245,8 +258,8 @@ footer {
 	}
 
 	.carousel-caption {
-		top: 12rem;
-		bottom: 12rem;
+		top: 11rem;
+		bottom: 11rem;
 	}
 
 
