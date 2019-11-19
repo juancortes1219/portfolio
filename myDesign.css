@@ -1,0 +1,291 @@
+html {
+	box-sizing: border-box;
+
+	font-family: 'Cabin', sans-serif;
+	font-size: 14px;
+	color: #fefefe;
+	background-color: transparent;
+}
+
+body { 
+	margin: 0;
+	  
+	font-family: 'Cabin', sans-serif;
+	color: #fefefe;
+	background-color: rgb(233, 228, 209);
+} 
+
+h1,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Kanit', sans-serif;
+}
+
+p {
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 2rem;
+}
+
+/* --- Navigation Bar --- */
+nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: rgb(76, 122, 156);
+
+	font-size: 1.5rem;
+}
+
+.navbar {
+	padding: 1rem;
+
+	font-size: 1.4rem;
+}
+
+.navbar-brand {
+	font-size: 1.7rem;
+}
+
+.navbar a {
+	transition: 0.4s;
+	color: #fefefe;
+}
+
+.navbar a:hover { 
+	/* color: #d9b38c;  */
+	color: rgb(216, 185, 128);
+}
+
+.nav-link.current {
+	/* color: #e6ccb3; */
+	color: rgb(228, 203, 154);
+}
+
+.navbar-toggler-icon {
+	display: inline;
+}	
+/* --- --- */
+
+
+
+/* ========== ========== index.html ========== ========== */
+/* --- Jumbotron --- */
+/* Buttons */
+.btn-primary {
+	transition: 0.4s;
+
+	width: 12rem;
+
+	border: 2px solid rgba(255, 255, 255, 1);
+
+	background-color: rgba(105, 101, 84, 0.5);
+}
+
+.btn:hover {
+	background-color: #696554;
+	border: 2px solid #696554;
+	color: #fefefe;
+}
+
+.btn a:after {
+	color: #fefefe;
+}
+
+.btn:last-child {
+	margin-right: 0;
+}
+/* --- */
+
+.jumbotron {
+	margin-bottom: 0rem;
+	height: 44rem;
+
+	background-image: url("./Images/Name-BG.jpg");
+	background-position: center;
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+    background-size: cover;
+}
+/* --- --- */
+
+
+
+/* --- Portrait and About Section --- */
+h2 {
+	color: #fefefe;
+}
+
+.container.marketing {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.lead {
+	margin-bottom: 2rem;
+
+	color: #262a24;
+}
+/* --- --- */
+/* ========== ========== index.html ========== ========== */
+
+
+
+
+/* ========== ========== photography.html ========== ========== */
+.carousel-inner {
+	background-image: url("./Images/Leaves-BG.jpg");
+	background-position: center;
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.carousel-item {
+	height: 32rem;
+}
+
+.carousel-caption {
+    /* bottom: 4rem; */
+    z-index: 10;
+}
+
+.carousel-text {
+	color: #ffffff;
+}
+
+.photo-gallery {
+	padding: 4rem;
+}
+/* ========== ========== photography.html ========== ========== */
+
+
+
+/* --- Footer Section --- */
+footer {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.container.ftr {
+	background-color: rgb(151, 145, 125);
+	max-width: 100%;
+}
+
+.ftr {
+	font-size: 1.3rem;
+}
+
+.bck {
+	color: rgb(228, 203, 154);
+}
+
+.bck:hover {
+	text-decoration: none;
+	color: rgb(216, 185, 128);
+}
+/* --- --- */
+
+
+
+
+
+/* ========== ========== Media Queries ========== ========== */
+@media (min-width: 320px) {
+	.container {
+		max-width: 18rem;
+	}
+
+	.jumbotron {
+		height: 48rem;
+	}
+	
+	.carousel-inner {
+		height: 50rem;
+	}
+	
+	.carousel-caption {
+		top: 22rem;
+		bottom: 22rem;
+	}
+
+	.carousel-alignL {
+		text-align: center;
+	}
+
+	.carousel-alignR {
+		text-align: center;
+	}
+}
+
+@media (min-width: 576px) {
+	.container {
+		padding-top: 4rem;
+	}
+
+	.container.marketing {
+		padding-top: 0;
+	}
+
+	.jumbotron {
+		height: 58rem;
+	}
+
+	.carousel-caption {
+		top: 21rem;
+		bottom: 21rem;
+	}
+
+	.cmr {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding-top: 8rem;
+		max-width: 45rem;
+	}
+
+	.jumbotron {
+		height: 44rem;
+	}
+
+	.carousel-inner {
+		height: 30rem;
+	}
+
+	.carousel-caption {
+		top: 11rem;
+		bottom: 11rem;
+	}
+
+
+	.carousel-alignL {
+		text-align: left;
+	}
+
+	.carousel-alignR {
+		text-align: right;
+	}
+
+	.container.ftr {
+		padding-top: 3rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		padding-top: 8rem;
+		max-width: 70rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 60rem;
+	}
+}
+/* ========== ========== Media Queries ========== ========== */
