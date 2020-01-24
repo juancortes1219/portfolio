@@ -163,6 +163,18 @@ h2 {
 
 
 
+/* ========== ========== hci.html ========== ========== */
+hr {
+	border-top: 2px solid rgb(255, 255, 255);
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+/* ========== ========== hci.html ========== ========== */
+
+
+
 /* --- Footer Section --- */
 footer {
 	padding-top: 3rem;
