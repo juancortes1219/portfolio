@@ -77,6 +77,7 @@ nav {
 .btn-primary {
 	transition: 0.4s;
 
+	margin-bottom: 0.5rem;
 	width: 12rem;
 
 	border: 2px solid rgba(255, 255, 255, 1);
@@ -116,6 +117,10 @@ nav {
 /* --- Portrait and About Section --- */
 h2 {
 	color: #fefefe;
+}
+
+.jParagraph {
+	margin-bottom: 1.5rem;
 }
 
 .container.marketing {
@@ -160,6 +165,26 @@ h2 {
 	padding: 4rem;
 }
 /* ========== ========== photography.html ========== ========== */
+
+
+
+/* ========== ========== contact.html ========== ========== */
+#jHeading {
+	margin-bottom: 1rem;
+}
+/* ========== ========== contact.html ========== ========== */
+
+
+
+/* ========== ========== hci.html ========== ========== */
+hr {
+	border-top: 2px solid rgb(255, 255, 255);
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+/* ========== ========== hci.html ========== ========== */
 
 
 
