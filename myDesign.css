@@ -60,13 +60,28 @@ nav {
 }
 
 .nav-link.current {
-	/* color: #e6ccb3; */
 	color: rgb(228, 203, 154);
 }
 
 .navbar-toggler-icon {
 	display: inline;
-}	
+}
+
+.dropdown-menu {
+	background-color: rgb(54, 93, 122);
+}
+
+.dropdown-menu a:hover {
+	background-color: transparent;
+}
+
+.dropdown-item.current {
+	color: rgb(228, 203, 154);
+}
+
+.dropdown-divider {
+	border-top: 1px solid rgb(141, 184, 218);
+}
 /* --- --- */
 
 
