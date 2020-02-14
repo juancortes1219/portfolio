@@ -66,7 +66,23 @@ nav {
 
 .navbar-toggler-icon {
 	display: inline;
-}	
+}
+
+.dropdown-menu {
+	background-color: rgb(54, 93, 122);
+}
+
+.dropdown-menu a:hover {
+	background-color: transparent;
+}
+
+.dropdown-item.current {
+	color: rgb(228, 203, 154);
+}
+
+.dropdown-divider {
+	border-top: 1px solid rgb(141, 184, 218);
+}
 /* --- --- */
 
 
@@ -104,11 +120,25 @@ nav {
 	margin-bottom: 0rem;
 	height: 44rem;
 
-	background-image: url("./Images/Name-BG.jpg");
+	/* background-image: url("./Images/BG.jpg"); */
 	background-position: center;
 	background-attachment: fixed; 
 	background-repeat: no-repeat; 
-    background-size: cover;
+	background-size: cover;
+}
+
+.tinted-bg {
+	background: 	
+    	linear-gradient(
+      	rgba(255, 255, 255, 0.1), 
+      	rgba(255, 255, 255, 0.1)
+		),
+
+		url(./Images/BG.jpg);
+		background-position: center;
+		background-attachment: fixed; 
+		background-repeat: no-repeat; 
+		background-size: cover;
 }
 /* --- --- */
 
