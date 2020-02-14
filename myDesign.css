@@ -60,6 +60,7 @@ nav {
 }
 
 .nav-link.current {
+	/* color: #e6ccb3; */
 	color: rgb(228, 203, 154);
 }
 
@@ -119,11 +120,25 @@ nav {
 	margin-bottom: 0rem;
 	height: 44rem;
 
-	background-image: url("./Images/Name-BG.jpg");
+	/* background-image: url("./Images/BG.jpg"); */
 	background-position: center;
 	background-attachment: fixed; 
 	background-repeat: no-repeat; 
-    background-size: cover;
+	background-size: cover;
+}
+
+.tinted-bg {
+	background: 	
+    	linear-gradient(
+      	rgba(255, 255, 255, 0.1), 
+      	rgba(255, 255, 255, 0.1)
+		),
+
+		url(./Images/BG.jpg);
+		background-position: center;
+		background-attachment: fixed; 
+		background-repeat: no-repeat; 
+		background-size: cover;
 }
 /* --- --- */
 
