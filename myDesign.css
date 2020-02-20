@@ -121,20 +121,20 @@ nav {
 	height: 44rem;
 
 	/* background-image: url("./Images/BG.jpg"); */
-	background-position: center;
+	/* background-position: center;
 	background-attachment: fixed; 
 	background-repeat: no-repeat; 
-	background-size: cover;
+	background-size: cover; */
 }
 
 .tinted-bg {
 	background: 	
     	linear-gradient(
-      	rgba(255, 255, 255, 0.1), 
-      	rgba(255, 255, 255, 0.1)
+      	rgba(0, 0, 0, 0.1), 
+      	rgba(0, 0, 0, 0.1)
 		),
 
-		url(./Images/BG.jpg);
+		url(./Images/BG-768.jpg);
 		background-position: center;
 		background-attachment: fixed; 
 		background-repeat: no-repeat; 
@@ -308,6 +308,20 @@ footer {
 		height: 44rem;
 	}
 
+	.tinted-bg {
+		background: 	
+			linear-gradient(
+			  rgba(0, 0, 0, 0.1), 
+			  rgba(0, 0, 0, 0.1)
+			),
+	
+			url(./Images/BG-1024.jpg);
+			background-position: center;
+			background-attachment: fixed; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+	}
+
 	.carousel-inner {
 		height: 30rem;
 	}
@@ -336,11 +350,39 @@ footer {
 		padding-top: 8rem;
 		max-width: 70rem;
 	}
+
+	.tinted-bg {
+		background: 	
+			linear-gradient(
+			  rgba(0, 0, 0, 0.1), 
+			  rgba(0, 0, 0, 0.1)
+			),
+	
+			url(./Images/BG.jpg);
+			background-position: center;
+			background-attachment: fixed; 
+			background-repeat: no-repeat; 
+			background-size: cover;
+	}
 }
 
 @media (min-width: 1024px) {
 	.container {
 		max-width: 60rem;
+	}
+
+	.tinted-bg {
+		background: 	
+			linear-gradient(
+			  rgba(0, 0, 0, 0.1), 
+			  rgba(0, 0, 0, 0.1)
+			),
+	
+			url(./Images/BG-1440.jpg);
+			background-position: center;
+			background-attachment: fixed; 
+			background-repeat: no-repeat; 
+			background-size: cover;
 	}
 }
 /* ========== ========== Media Queries ========== ========== */
