@@ -119,12 +119,6 @@ nav {
 .jumbotron {
 	margin-bottom: 0rem;
 	height: 44rem;
-
-	/* background-image: url("./Images/BG.jpg"); */
-	/* background-position: center;
-	background-attachment: fixed; 
-	background-repeat: no-repeat; 
-	background-size: cover; */
 }
 
 .tinted-bg {
@@ -137,7 +131,11 @@ nav {
 		url(./Images/BG-768.jpg);
 		background-position: center;
 		background-attachment: fixed; 
-		background-repeat: no-repeat; 
+		background-repeat: no-repeat;
+
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 		background-size: cover;
 }
 /* --- --- */
@@ -318,7 +316,11 @@ footer {
 			url(./Images/BG-1024.jpg);
 			background-position: center;
 			background-attachment: fixed; 
-			background-repeat: no-repeat; 
+			background-repeat: no-repeat;
+
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 			background-size: cover;
 	}
 
@@ -362,6 +364,10 @@ footer {
 			background-position: center;
 			background-attachment: fixed; 
 			background-repeat: no-repeat; 
+			
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 			background-size: cover;
 	}
 }
@@ -381,7 +387,11 @@ footer {
 			url(./Images/BG-1440.jpg);
 			background-position: center;
 			background-attachment: fixed; 
-			background-repeat: no-repeat; 
+			background-repeat: no-repeat;
+
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 			background-size: cover;
 	}
 }
