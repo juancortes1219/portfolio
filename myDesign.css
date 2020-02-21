@@ -130,7 +130,6 @@ nav {
 
 		url(./Images/BG-768.jpg);
 		background-position: center;
-		/* background-attachment: fixed; */
 		background-repeat: no-repeat;
 
 		-webkit-background-size: cover;
@@ -315,7 +314,6 @@ footer {
 	
 			url(./Images/BG-1024.jpg);
 			background-position: center;
-			/* background-attachment: fixed;  */
 			background-repeat: no-repeat;
 
 			-webkit-background-size: cover;
