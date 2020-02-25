@@ -217,17 +217,13 @@ hr {
 
 /* --- Footer Section --- */
 footer {
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-}
-
-.container.ftr {
 	background-color: rgb(151, 145, 125);
-	max-width: 100%;
 }
 
 .ftr {
-	font-size: 1.3rem;
+	padding: 2rem;
+
+	font-size: 1.2rem;
 }
 
 .bck {
@@ -339,10 +335,6 @@ footer {
 	.carousel-alignR {
 		text-align: right;
 	}
-
-	.container.ftr {
-		padding-top: 3rem;
-	}
 }
 
 @media (min-width: 992px) {
@@ -391,6 +383,20 @@ footer {
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+	}
+}
+
+/* @media (min-width: 1440px) {
+	
+} */
+
+@media (min-width: 2560px) {
+	.container {
+		max-width: 70rem;
+	}
+	
+	.ftr {
+		padding: 4.5rem;
 	}
 }
 /* ========== ========== Media Queries ========== ========== */
