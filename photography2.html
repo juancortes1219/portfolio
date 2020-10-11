@@ -53,60 +53,95 @@
 		</nav>
 		<!--  -->
 
-		<!-- Jumbotron Parallax -->
-		<div class="jumbotron-photo tinted-bg text-center">
-			<div class="container">
+		<!-- Carousel -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-				<!-- <h1 id="jHeading" class="display-4 text-break">PHOTOGRAPHY</h1> -->
-				<h1 id="jHeading" class="display-3 text-break">PHOTO-GRAPHY</h1>
-				
-			</div>
-		</div>
-		<!--  -->
-		
-		<!-- Area For Sections -->
-		<div class="container marketing photo">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
 
-			<h1 class="display-3 text-center">MY CAMERAS</h1>
+			<!-- Inner Carousel -->
+			<div class="carousel-inner">
 
-			<!-- <hr class="featurette-divider"> -->
-
-			<div class="row featurette featurette-alignR">
-					<div class="col-md-7 order-md-2">
-						<h2 class="featurette-heading">Pentax K1000</h2>
-						<p class="lead pro">This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend
-							of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even
-							photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
-						</p>
+				<!-- 1st Slide -->
+				<div class="carousel-item active">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1 id="jHeading-p" class="display-4 text-break">PHOTOGRAPHY</h1>
+						</div>
 					</div>
-					<div class="col-md-5 order-md-1">
-						<p class="text-center">
-							<img src="https://lh3.googleusercontent.com/_RF8rTmzSNrEJk1mFjryM1BKohDhB02PpkDnvsdKVJ4fBFhhubym2DlPUSyQh5d8XwNAfg_Dq5S3QuMVuDlzcqBOUaNNY3mviOTsT03I5YP7fnL8UWf1SIWrJIUXRF5hHyUPuWSxdg=w2400"
-								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-								width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-						</p>
+				</div>
+
+				<!-- Script For Heading In Jumbotron -->
+				<script src="heading.js"></script>
+
+				<!-- 2nd Slide -->
+				<div class="carousel-item">
+					<div class="container marketing ph">
+						<div class="row featurette">
+							<div class="col-md-7 order-sm-2">
+								<h2 class="featurette-heading carousel-alignL">My Cameras</h2>
+								<p class="lead carousel-text carousel-alignL">
+									<strong>Pentax K1000</strong>
+									<br>
+									This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend
+									of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even
+									photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
+								</p>
+							</div>
+							<div class="col-md-5 order-md-1">
+								<p class="carousel-alignL">
+									<img src="https://picsum.photos/500/500"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="200" height="200" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+								</p>
+							</div>
+						</div>
 					</div>
+				</div>
+
+				<!-- 3rd Slide -->
+				<div class="carousel-item">
+					<div class="container marketing ph">
+						<div class="row featurette">
+							<div class="col-md-7">
+								<h2 class="featurette-heading carousel-alignR">My Cameras</h2>
+								<p class="lead carousel-text carousel-alignR">
+									<strong>Canon EOS Rebel T4i</strong>
+									<br>
+									This is my second camera. I bought this one spring of 2018. That semester at Georgia State University,
+									I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it
+									was decent and affordable for a beginner camera. This is my main camera right now.
+								</p>
+							</div>
+							<div class="col-md-5">
+								<p class="carousel-alignR">
+									<img src="https://picsum.photos/800/800"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="200" height="200" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 
-			<hr class="featurette-divider">
-
-			<div class="row featurette featurette-alignL">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Canon EOS Rebel T4i</h2>
-					<p class="lead pro">This is my second camera. I bought this one spring of 2018. That semester at Georgia State University,
-						I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it
-						was decent and affordable for a beginner camera. This is my main camera right now.</p>
-				</div>
-				<div class="col-md-5 order-md-1">
-					<p class="text-center">
-						<img src="https://lh3.googleusercontent.com/_RF8rTmzSNrEJk1mFjryM1BKohDhB02PpkDnvsdKVJ4fBFhhubym2DlPUSyQh5d8XwNAfg_Dq5S3QuMVuDlzcqBOUaNNY3mviOTsT03I5YP7fnL8UWf1SIWrJIUXRF5hHyUPuWSxdg=w2400"
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-					</p>
-				</div>
-			</div>
+			<!-- Previous and Next Buttons -->
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+  
 		</div>
-		<!--  -->
+		  <!--  -->
 
 		<!-- Gallery -->
 		<!-- <div class="photo-gallery">
