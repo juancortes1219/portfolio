@@ -32,8 +32,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="programming.html">Programming</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Programming
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="programming.html">My Work/Projects</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="hci.html">HCI Class</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link current" href="photography.html">Photography <span class="sr-only">(current)</span></a>
@@ -63,7 +70,7 @@
 				<div class="carousel-item active">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1 id="jHeading" class="display-4 text-break">PHOTOGRAPHY</h1>
+							<h1 id="jHeading-p" class="display-4 text-break">PHOTOGRAPHY</h1>
 						</div>
 					</div>
 				</div>
@@ -73,19 +80,23 @@
 
 				<!-- 2nd Slide -->
 				<div class="carousel-item">
-					<div class="container marketing">
+					<div class="container marketing ph">
 						<div class="row featurette">
-							<div class="col-sm-7 order-sm-2">
+							<div class="col-md-7 order-sm-2">
 								<h2 class="featurette-heading carousel-alignL">My Cameras</h2>
 								<p class="lead carousel-text carousel-alignL">
-									Pentax K1000
+									<strong>Pentax K1000</strong>
 									<br>
-									This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
+									This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend
+									of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even
+									photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
 								</p>
 							</div>
 							<div class="col-md-5 order-md-1">
-								<p class="align-img">
-									<img src="https://picsum.photos/500/500" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+								<p class="carousel-alignL">
+									<img src="https://picsum.photos/500/500"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="200" height="200" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
 								</p>
 							</div>
 						</div>
@@ -94,19 +105,23 @@
 
 				<!-- 3rd Slide -->
 				<div class="carousel-item">
-					<div class="container marketing">
+					<div class="container marketing ph">
 						<div class="row featurette">
 							<div class="col-md-7">
 								<h2 class="featurette-heading carousel-alignR">My Cameras</h2>
 								<p class="lead carousel-text carousel-alignR">
-									Canon EOS Rebel T4i
+									<strong>Canon EOS Rebel T4i</strong>
 									<br>
-									This is my second camera. I bought this one spring of 2018. That semester at Georgia State University, I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it was decent and affordable for a beginner camera. This is my main camera right now. 
+									This is my second camera. I bought this one spring of 2018. That semester at Georgia State University,
+									I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it
+									was decent and affordable for a beginner camera. This is my main camera right now.
 								</p>
 							</div>
 							<div class="col-md-5">
-								<p class="align-img">
-									<img src="https://picsum.photos/800/800" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+								<p class="carousel-alignR">
+									<img src="https://picsum.photos/800/800"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="200" height="200" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
 								</p>
 							</div>
 						</div>
@@ -159,9 +174,15 @@
 		<!--  -->
 
 		<!-- Footer -->
-		<footer class="container ftr">
-			<p class="float-right ftr"><a class="bck" href="#">Back to top</a></p>
-			<p class="ftr">&copy; 2020 by Juan Cortes.</p>
+		<footer class="footer">
+			<div class="ftr">
+				<span class="float-right">
+					<a class="bck" href="#">Back to top</a>
+				</span>
+				<span>
+					&copy; 2020 by Juan Cortes.
+				</span>
+			</div>
 		</footer>
 		<!--  -->
 		
@@ -173,6 +194,8 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 		<script src="gallery.js"></script>
+
+		<script src="smooth-scroll.js"></script>
 		<!--  -->
 
 	</body> 
