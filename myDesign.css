@@ -33,6 +33,23 @@ strong {
 	font-weight: bold;
 }
 
+.container.marketing.home,
+.container.marketing.pro,
+.container.marketing.hci,
+.container.marketing.photo {
+	position: relative;
+	bottom: 7.825rem;
+	max-width: 100%;
+	padding: 0 3rem 0 3rem;
+	background-color: rgb(212, 208, 190);
+
+	z-index: 1;
+}
+
+.container.marketing.photo {
+	padding: 3rem 3rem 0 3rem;
+}
+
 /* --- Navigation Bar --- */
 nav {
 	display: flex;
@@ -160,20 +177,6 @@ nav {
 /* --- Portrait and About Section --- */
 .jParagraph {
 	margin-bottom: 2rem;
-}
-
-.container.marketing.home,
-.container.marketing.pro,
-.container.marketing.hci,
-.container.marketing.photo {
-	position: relative;
-	bottom: 7.825rem;
-	max-width: 100%;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	background-color: rgb(212, 208, 190);
-
-	z-index: 1;
 }
 
 .row.featurette.featurette-alignL {
