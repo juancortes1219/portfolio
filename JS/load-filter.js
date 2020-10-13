@@ -3,11 +3,11 @@ function myFunction(x) {
     
     if (x.matches) {
         $(function () {
-            $(j).load("/photo-extra/larger-filter.html");
+            $(j).load("./photo-extra/larger-filter.html");
         });
     } else {
         $(function () {
-            $(j).load("/photo-extra/smaller-filter.html");
+            $(j).load("./photo-extra/smaller-filter.html");
         });
     }
 }
