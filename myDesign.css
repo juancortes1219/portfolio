@@ -92,12 +92,12 @@ nav {
 
 .navbar a {
 	transition: 0.4s;
-	color: #fefefe !important;
+	color: #fefefe;
 }
 
 .navbar a:hover { 
 	/* color: #d9b38c;  */
-	color: rgb(216, 185, 128);
+	color: rgb(216, 185, 128) !important;
 }
 
 .nav-link.current {
@@ -118,11 +118,21 @@ nav {
 }
 
 .dropdown-item {
+	padding:.25rem 0 .25rem 2rem !important;
 	font-size: 1.4rem !important;
 }
 
 .dropdown-item.current {
 	color: rgb(228, 203, 154);
+}
+
+.navbar .dropdown-menu {
+    position: initial !important;
+    margin-top: 0;
+}
+
+.navbar .dropdown-menu a:not(.active) {
+    color: #fefefe;
 }
 
 .dropdown-divider {
@@ -333,6 +343,19 @@ nav {
 
 .contact-title {
 	margin-bottom: 1rem;
+}
+
+.popover-header {
+	background-color: rgb(151, 145, 125);
+
+    font-size: 1.4rem;
+}
+
+.popover-body {
+	background-color: rgb(212, 208, 190);
+
+	font-size: 1.2rem;
+	color: #262a24;
 }
 /* ========== ========== contact.html ========== ========== */
 
