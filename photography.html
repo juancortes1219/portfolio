@@ -7,8 +7,8 @@
 		<meta charset="UTF-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cabin|Fira+Sans+Condensed|Kanit" rel="stylesheet"> 
 		<link rel="stylesheet" type="text/css" href="myDesign.css">
 		
@@ -57,19 +57,40 @@
 		<div class="jumbotron-photo tinted-bg text-center">
 			<div class="container">
 
-				<!-- <h1 id="jHeading" class="display-4 text-break">PHOTOGRAPHY</h1> -->
 				<h1 id="jHeading" class="display-3 text-break">PHOTO-GRAPHY</h1>
 				
 			</div>
 		</div>
 		<!--  -->
-		
+
+		<!-- Gallery -->
+		<div class="gallery-container">
+
+			<!-- Filters -->
+			<div class="filter-container">
+				<div class="col-md-12 d-flex justify-content-center mb-4">
+					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2018">2018</button>
+					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2019">2019</button>
+					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2020">2020</button>
+				</div>	
+			</div>
+
+			<div id="gallery-filter" class="filter-container"></div>
+			<!--  -->
+			
+			<!-- Gallery -->
+			<div id="gallery" class="gallery"></div>
+			<!--  -->
+
+		</div>
+		<!--  -->
+
 		<!-- Area For Sections -->
 		<div class="container marketing photo">
 
-			<h1 class="display-3 text-center">MY CAMERAS</h1>
+			<hr class="main-divider featurette-divider">
 
-			<!-- <hr class="featurette-divider"> -->
+			<h1 class="display-3 text-center">MY CAMERAS</h1>
 
 			<div class="row featurette featurette-alignR">
 					<div class="col-md-7 order-md-2">
@@ -108,36 +129,6 @@
 		</div>
 		<!--  -->
 
-		<!-- Gallery -->
-		<!-- <div class="photo-gallery">
-			<div class="container"> -->
-
-				<!-- Grid column -->
-				<!-- <div class="col-md-12 d-flex justify-content-center mb-5">
-
-					<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-					<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
-					<button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
-
-				</div> -->
-				<!-- Grid column -->
-
-				<!-- <div class="intro">
-					<h2 class="text-center">Lightbox Gallery</h2>
-					<p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-				</div>
-				<div class="row photos">
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/900/500" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/900/500"></a></div>
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/200/400" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/200/400"></a></div>
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/200/300" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/200/300"></a></div>
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/200/600" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/200/600"></a></div>
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/200/400" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/200/400"></a></div>
-					<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://picsum.photos/200/300" data-lightbox="photos"><img class="img-fluid" src="https://picsum.photos/200/300"></a></div>
-				</div>
-			</div>
-		</div> -->
-		<!--  -->
-
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="ftr">
@@ -152,15 +143,16 @@
 		<!--  -->
 		
 		<!-- Scripts -->
-		<script src="heading.js"></script>
+		<script src="/JS/heading.js"></script>
 		
-		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-		<script src="gallery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
-		<script src="smooth-scroll.js"></script>
+		<script src="/JS/load-filter.js"></script>
+		<script src="/JS/load-mainGallery.js"></script>
+		<script src="/JS/smooth-scroll.js"></script>
 		<!--  -->
 
 	</body> 
