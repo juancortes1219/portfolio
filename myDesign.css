@@ -102,7 +102,7 @@ nav {
 
 .nav-link.current {
 	/* color: #e6ccb3; */
-	color: rgb(228, 203, 154);
+	color: rgb(228, 203, 154) !important;
 }
 
 .navbar-toggler-icon {
@@ -113,26 +113,27 @@ nav {
 	background-color: rgb(54, 93, 122);
 }
 
+.dropdown-menu.p-menu {
+	width: 100%;
+}
+
 .dropdown-menu a:hover {
 	background-color: transparent;
 }
 
-.dropdown-item {
-	padding:.25rem 0 .25rem 2rem !important;
+.dropdown-item{
+	padding:.25rem 2rem !important;
 	font-size: 1.4rem !important;
+}
+
+.dropdown-item.p-menuItem{
+	padding:.25rem 2rem !important;
+	font-size: 1.4rem !important;
+	color: #fefefe !important;
 }
 
 .dropdown-item.current {
 	color: rgb(228, 203, 154);
-}
-
-.navbar .dropdown-menu {
-    position: initial !important;
-    margin-top: 0;
-}
-
-.navbar .dropdown-menu a:not(.active) {
-    color: #fefefe;
 }
 
 .dropdown-divider {
@@ -402,6 +403,10 @@ footer {
 }
 
 @media (min-width: 576px) {
+	.dropdown-menu.p-menu {
+		width: auto;
+	}
+
 	.jumbotron-home {
 		padding-top: 13rem;
 	}
