@@ -16,89 +16,110 @@
       
 	</head> 
 
-	<body> 
+	<body onload="stopLoader()">
 
-		<!-- Navigation Bar --> 
-		<nav class="navbar navbar-expand-sm">
-			<a class="navbar-brand" href="index.html">JC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon" style="color: #fefefe">
-					<i class="fas fa-bars"></i>
-				</span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarsExample03">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programming
-						</a>
-						<div class="dropdown-menu p-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item p-menuItem" href="programming.html">My Work/Projects</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item p-menuItem" href="hci.html">HCI Class</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link current" href="photography.html">Photography <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--  -->
+		<div id="loader"></div>
 
-		<!-- Jumbotron Parallax -->
-		<div class="jumbotron-photo tinted-bg text-center">
-			<div class="container">
-
-				<h1 id="jHeading" class="display-3 text-break">PHOTO-GRAPHY</h1>
+		<div id="page-content" style="display: none;">
+			<!-- Navigation Bar --> 
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="index.html">JC</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" style="color: #fefefe">
+						<i class="fas fa-bars"></i>
+					</span>
+				</button>
 				
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programming
+							</a>
+							<div class="dropdown-menu p-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item p-menuItem" href="programming.html">My Work/Projects</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item p-menuItem" href="hci.html">HCI Class</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link current" href="photography.html">Photography <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Me</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--  -->
+			
+			<!-- Jumbotron Parallax -->
+			<div class="jumbotron-photo tinted-bg text-center">
+				<div class="container">
+			
+					<h1 id="jHeading" class="display-3 text-break">PHOTO-GRAPHY</h1>
+					
+				</div>
 			</div>
-		</div>
-		<!--  -->
-
-		<!-- Gallery -->
-		<div class="gallery-container">
-
-			<!-- Filters -->
-			<div class="filter-container">
-				<div class="col-md-12 d-flex justify-content-center mb-4">
-					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2018">2018</button>
-					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2019">2019</button>
-					<button type="button" class="btn btn-filter waves-effect filter" data-rel="2020">2020</button>
-				</div>	
-			</div>
-
-			<div id="gallery-filter" class="filter-container"></div>
 			<!--  -->
 			
 			<!-- Gallery -->
-			<div id="gallery" class="gallery"></div>
+			<div class="gallery-container">
+			
+				<!-- Filters -->
+				<div class="filter-container">
+					<div class="col-md-12 d-flex justify-content-center mb-4">
+						<button type="button" class="btn btn-filter waves-effect filter" data-rel="2018">2018</button>
+						<button type="button" class="btn btn-filter waves-effect filter" data-rel="2019">2019</button>
+						<button type="button" class="btn btn-filter waves-effect filter" data-rel="2020">2020</button>
+					</div>	
+				</div>
+			
+				<div id="gallery-filter" class="filter-container"></div>
+				<!--  -->
+				
+				<!-- Gallery -->
+				<div id="gallery" class="gallery"></div>
+				<!--  -->
+			
+			</div>
 			<!--  -->
-
-		</div>
-		<!--  -->
-
-		<!-- Area For Sections -->
-		<div class="container marketing photo">
-
-			<hr class="main-divider featurette-divider">
-
-			<h1 class="display-3 text-center">MY CAMERAS</h1>
-
-			<div class="row featurette featurette-alignR">
-					<div class="col-md-7 order-md-2">
-						<h2 class="featurette-heading">Pentax K1000</h2>
-						<p class="lead pro">This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend
-							of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even
-							photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
-						</p>
+			
+			<!-- Area For Sections -->
+			<div class="container marketing photo">
+			
+				<hr class="main-divider featurette-divider">
+			
+				<h1 class="display-3 text-center">MY CAMERAS</h1>
+			
+				<div class="row featurette featurette-alignR">
+						<div class="col-md-7 order-md-2">
+							<h2 class="featurette-heading">Pentax K1000</h2>
+							<p class="lead pro">This was my first camera. I bought it the fall of 2017. The reason I bought it was because a friend
+								of mine had one. I was intrigued by its look. Back then, I wasn’t knowledgeable on cameras or even
+								photography yet, so I had to do some bit of learning since the Pentax K1000 is a film camera.
+							</p>
+						</div>
+						<div class="col-md-5 order-md-1">
+							<p class="text-center">
+								<img src="https://lh3.googleusercontent.com/_RF8rTmzSNrEJk1mFjryM1BKohDhB02PpkDnvsdKVJ4fBFhhubym2DlPUSyQh5d8XwNAfg_Dq5S3QuMVuDlzcqBOUaNNY3mviOTsT03I5YP7fnL8UWf1SIWrJIUXRF5hHyUPuWSxdg=w2400"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+							</p>
+						</div>
+				</div>
+			
+				<hr class="featurette-divider">
+			
+				<div class="row featurette featurette-alignL">
+					<div class="col-md-7">
+						<h2 class="featurette-heading">Canon EOS Rebel T4i</h2>
+						<p class="lead pro">This is my second camera. I bought this one spring of 2018. That semester at Georgia State University,
+							I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it
+							was decent and affordable for a beginner camera. This is my main camera right now.</p>
 					</div>
 					<div class="col-md-5 order-md-1">
 						<p class="text-center">
@@ -107,40 +128,23 @@
 								width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
 						</p>
 					</div>
-			</div>
-
-			<hr class="featurette-divider">
-
-			<div class="row featurette featurette-alignL">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">Canon EOS Rebel T4i</h2>
-					<p class="lead pro">This is my second camera. I bought this one spring of 2018. That semester at Georgia State University,
-						I took “Intro to Photography”. I needed a DSLR for that class, so I went with the Rebel T4i since it
-						was decent and affordable for a beginner camera. This is my main camera right now.</p>
-				</div>
-				<div class="col-md-5 order-md-1">
-					<p class="text-center">
-						<img src="https://lh3.googleusercontent.com/_RF8rTmzSNrEJk1mFjryM1BKohDhB02PpkDnvsdKVJ4fBFhhubym2DlPUSyQh5d8XwNAfg_Dq5S3QuMVuDlzcqBOUaNNY3mviOTsT03I5YP7fnL8UWf1SIWrJIUXRF5hHyUPuWSxdg=w2400"
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-					</p>
 				</div>
 			</div>
+			<!--  -->
+			
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="ftr">
+					<span class="float-right">
+						<a class="bck" href="#">Back to top</a>
+					</span>
+					<span>
+						&copy; 2020 by Juan Cortes.
+					</span>
+				</div>
+			</footer>
+			<!--  -->
 		</div>
-		<!--  -->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="ftr">
-				<span class="float-right">
-					<a class="bck" href="#">Back to top</a>
-				</span>
-				<span>
-					&copy; 2020 by Juan Cortes.
-				</span>
-			</div>
-		</footer>
-		<!--  -->
 		
 		<!-- Scripts -->
 		<script src="./JS/heading.js"></script>
@@ -150,6 +154,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
+		<script src="./JS/pre-loader.js"></script>
 		<script src="./JS/load-filter.js"></script>
 		<script src="./JS/load-mainGallery.js"></script>
 		<script src="./JS/smooth-scroll.js"></script>

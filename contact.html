@@ -15,71 +15,75 @@
       
 	</head> 
 
-	<body> 
+	<body onload="stopLoader()">
 
-		<!-- Navigation Bar --> 
-		<nav class="navbar navbar-expand-sm">
-			<a class="navbar-brand" href="index.html">JC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon" style="color: #fefefe">
-					<i class="fas fa-bars"></i>
-				</span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarsExample03">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programming
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="programming.html">My Work/Projects</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="hci.html">HCI Class</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="photography.html">Photography</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link current" href="contact.html">Contact Me <span class="sr-only">(current)</span></a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--  -->
+		<div id="loader"></div>
 
-		<!-- Jumbotron Parallax -->
-		<div class="jumbotron-contact tinted-bg text-center">
-			<div class="container">
-
-				<!-- <h1 id="jHeading" class="display-4 text-break">CONTACT</h1> -->
-				<h1 class="display-3 contact-title text-break">CONTACT</h1>
-
-				<p>
-					<a tabindex="0" class="btn btn-primary btn-lg" role="button" data-toggle="popover" data-placement="top" title="Email" data-content="juan.cortes1219@gmail.com">Email</a>
-					<a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/juan-cortes1219/" role="button" target="_blank">LinkedIn</a>
-				</p>
+		<div id="page-content" style="display: none;">
+			<!-- Navigation Bar --> 
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="index.html">JC</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" style="color: #fefefe">
+						<i class="fas fa-bars"></i>
+					</span>
+				</button>
 				
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programming
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="programming.html">My Work/Projects</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="hci.html">HCI Class</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photography.html">Photography</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link current" href="contact.html">Contact Me <span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--  -->
+			
+			<!-- Jumbotron Parallax -->
+			<div class="jumbotron-contact tinted-bg text-center">
+				<div class="container">
+			
+					<!-- <h1 id="jHeading" class="display-4 text-break">CONTACT</h1> -->
+					<h1 class="display-3 contact-title text-break">CONTACT</h1>
+			
+					<p>
+						<a tabindex="0" class="btn btn-primary btn-lg" role="button" data-toggle="popover" data-placement="top" title="Email" data-content="juan.cortes1219@gmail.com">Email</a>
+						<a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/juan-cortes1219/" role="button" target="_blank">LinkedIn</a>
+					</p>
+					
+				</div>
 			</div>
+			<!--  -->
+			
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="ftr">
+					<span class="float-right">
+						<a class="bck" href="#">Back to top</a>
+					</span>
+					<span>
+						&copy; 2020 by Juan Cortes.
+					</span>
+				</div>
+			</footer>
+			<!--  -->
 		</div>
-		<!--  -->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="ftr">
-				<span class="float-right">
-					<a class="bck" href="#">Back to top</a>
-				</span>
-				<span>
-					&copy; 2020 by Juan Cortes.
-				</span>
-			</div>
-		</footer>
-		<!--  -->
 		
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -91,8 +95,9 @@
 				})
 		</script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+		<script src="./JS/pre-loader.js"></script>
 		<script src="./JS/smooth-scroll.js"></script>
 		<!--  -->
 

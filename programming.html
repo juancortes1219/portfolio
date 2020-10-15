@@ -15,116 +15,121 @@
       
 	</head> 
 
-	<body> 
+	<body onload="stopLoader()">
 
-		<!-- Navigation Bar --> 
-		<nav class="navbar navbar-expand-sm">
-			<a class="navbar-brand" href="index.html">JC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon" style="color: #fefefe">
-					<i class="fas fa-bars"></i>
-				</span>
-			</button>
+		<div id="loader"></div>
+
+		<div id="page-content" style="display: none;">
+			<!-- Navigation Bar --> 
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="index.html">JC</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" style="color: #fefefe">
+						<i class="fas fa-bars"></i>
+					</span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle current" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programming
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item current" href="programming.html">My Work/Projects <span class="sr-only">(current)</span></a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="hci.html">HCI Class</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photography.html">Photography</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Me</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--  -->
 			
-			<div class="collapse navbar-collapse" id="navbarsExample03">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle current" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programming
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item current" href="programming.html">My Work/Projects <span class="sr-only">(current)</span></a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="hci.html">HCI Class</a>
+			<!-- Jumbotron Parallax -->
+			<div class="jumbotron-pro tinted-bg text-center">
+				<div class="container">
+			
+					<h1 class="display-3">MY WORK AND PROJECTS</h1>
+				
+				</div>
+			</div>
+			<!--  -->
+			
+			<!-- Area For Sections -->
+			<div class="container marketing pro">
+				<div class="row featurette featurette-alignR">
+						<div class="col-md-7 order-md-2">
+							<h2 class="featurette-heading">GSU - CSC 4720: Human-Computer Interaction (Spring 2020)</h2>
+							<p class="lead pro">You can find projects, assignments, and other stuff I worked while in this class.</p>
+							<p class="lead">
+								<a class="btn btn-primary btn-lg" href="hci.html" role="button">Go To Page</a>
+							</p>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="photography.html">Photography</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--  -->
-
-		<!-- Jumbotron Parallax -->
-		<div class="jumbotron-pro tinted-bg text-center">
-			<div class="container">
-	
-				<h1 class="display-3">MY WORK AND PROJECTS</h1>
+						<div class="col-md-5 order-md-1">
+							<p class="text-center">
+								<!-- GSU-Logo -->
+								<img src="https://lh3.googleusercontent.com/_jh7vsm6J9IPdrlNKXY8O2lKdOfJbiQ1FS6WkeiGQB0xlTpAfYMosQhFaNpztiYbRXvLQW9WBGMkB6ze5TnPDa1SkG7Wh8SNAR8-vRGhk_chYQZdQgLy_iIU2xeWHWLEIYwYff1QmA=w2400"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+							</p>
+						</div>
+				</div>
 			
-			</div>
-		</div>
-		<!--  -->
-
-		<!-- Area For Sections -->
-		<div class="container marketing pro">
-			<div class="row featurette featurette-alignR">
-					<div class="col-md-7 order-md-2">
+				<hr class="featurette-divider">
+			
+				<div class="row featurette featurette-alignL">
+					<div class="col-md-7">
 						<h2 class="featurette-heading">GSU - CSC 4720: Human-Computer Interaction (Spring 2020)</h2>
-						<p class="lead pro">You can find projects, assignments, and other stuff I worked while in this class.</p>
+						<p class="lead pro">Go straight to the documents of my Final project or to the Interactive Prototype.</p>
+						<p class="lead-btn">
+							<a class="btn btn-primary btn-lg" href="comex.html" role="button">Go To Project</a>
+						</p>
 						<p class="lead">
-							<a class="btn btn-primary btn-lg" href="hci.html" role="button">Go To Page</a>
+							<a class="btn btn-primary btn-lg" href="https://xd.adobe.com/view/7481bcd4-c005-4d04-592f-769db8618494-02b0/" role="button" target="_blank">Go To Prototype</a>
 						</p>
 					</div>
 					<div class="col-md-5 order-md-1">
 						<p class="text-center">
-							<!-- GSU-Logo -->
-							<img src="https://lh3.googleusercontent.com/_jh7vsm6J9IPdrlNKXY8O2lKdOfJbiQ1FS6WkeiGQB0xlTpAfYMosQhFaNpztiYbRXvLQW9WBGMkB6ze5TnPDa1SkG7Wh8SNAR8-vRGhk_chYQZdQgLy_iIU2xeWHWLEIYwYff1QmA=w2400"
+							<!-- Comex-Logo -->
+							<img src="https://lh3.googleusercontent.com/i24MGIXTw2KBOaLpW4yGz5DZrJqlsFFIuids9li4kHPD5TC1ATVUvmFRnaAgk5qFNIFMFNF9AicH8Irth8HX97r_1LduRHnqz2MmersjsUdY7_8X9BkcyhWdt4CO7JPhJ0b8IUt23A=w2400"
 								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
 								width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
 						</p>
 					</div>
 			</div>
-
-			<hr class="featurette-divider">
-
-			<div class="row featurette featurette-alignL">
-				<div class="col-md-7">
-					<h2 class="featurette-heading">GSU - CSC 4720: Human-Computer Interaction (Spring 2020)</h2>
-					<p class="lead pro">Go straight to the documents of my Final project or to the Interactive Prototype.</p>
-					<p class="lead-btn">
-						<a class="btn btn-primary btn-lg" href="comex.html" role="button">Go To Project</a>
-					</p>
-					<p class="lead">
-						<a class="btn btn-primary btn-lg" href="https://xd.adobe.com/view/7481bcd4-c005-4d04-592f-769db8618494-02b0/" role="button" target="_blank">Go To Prototype</a>
-					</p>
-				</div>
-				<div class="col-md-5 order-md-1">
-					<p class="text-center">
-						<!-- Comex-Logo -->
-						<img src="https://lh3.googleusercontent.com/i24MGIXTw2KBOaLpW4yGz5DZrJqlsFFIuids9li4kHPD5TC1ATVUvmFRnaAgk5qFNIFMFNF9AicH8Irth8HX97r_1LduRHnqz2MmersjsUdY7_8X9BkcyhWdt4CO7JPhJ0b8IUt23A=w2400"
-							class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-							width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-					</p>
-				</div>
-		</div>
-		</div>
-		<!--  -->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="ftr">
-				<span class="float-right">
-					<a class="bck" href="#">Back to top</a>
-				</span>
-				<span>
-					&copy; 2020 by Juan Cortes.
-				</span>
 			</div>
-		</footer>
-		<!--  -->
+			<!--  -->
+			
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="ftr">
+					<span class="float-right">
+						<a class="bck" href="#">Back to top</a>
+					</span>
+					<span>
+						&copy; 2020 by Juan Cortes.
+					</span>
+				</div>
+			</footer>
+			<!--  -->
+		</div>
 		
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+		<script src="./JS/pre-loader.js"></script>
 		<script src="./JS/smooth-scroll.js"></script>
 		<!--  -->
 

@@ -15,109 +15,114 @@
       
 	</head> 
 
-	<body> 
+	<body onload="stopLoader()">
 
-		<!-- Navigation Bar --> 
-		<nav class="navbar navbar-expand-sm">
-			<a class="navbar-brand" href="index.html">JC</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon" style="color: #fefefe">
-					<i class="fas fa-bars"></i>
-				</span>
-			</button>
-			
-			<div class="collapse navbar-collapse" id="navbarsExample03">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link current" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Programming
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="programming.html">My Work/Projects</a>
-							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="hci.html">HCI Class</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="photography.html">Photography</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact Me</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!--  -->
-		
-		<!-- Jumbotron Parallax -->
-		<div class="jumbotron-home tinted-bg text-center">
-			<div class="container">
-		
-				<h1 class="display-3">HI, MY NAME IS JUAN CORTES.</h1>
-				<p class="jParagraph">Programmer and Photographer</p>
-		
-				<!-- Social Media Buttons -->
-				<p>
-					<a class="btn btn-primary btn-lg" href="https://www.instagram.com/its.juancortes/" role="button" target="_blank">personal IG</a>
-					<a class="btn btn-primary btn-lg" href="https://www.instagram.com/photogenic.juan/" role="button" target="_blank">photography IG</a>
-					<a class="btn btn-primary btn-lg" href="https://www.youtube.com/channel/UC7wvxrc3ovMnXcN0kqb67fQ/featured" role="button" target="_blank">YouTube</a>
-				</p>
+		<div id="loader"></div>
+
+		<div id="page-content" style="display: none;">
+			<!-- Navigation Bar --> 
+			<nav class="navbar navbar-expand-sm">
+				<a class="navbar-brand" href="index.html">JC</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon" style="color: #fefefe">
+						<i class="fas fa-bars"></i>
+					</span>
+				</button>
 				
+				<div class="collapse navbar-collapse" id="navbarsExample03">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link current" href="index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Programming
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="programming.html">My Work/Projects</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="hci.html">HCI Class</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="photography.html">Photography</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact Me</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--  -->
+			
+			<!-- Jumbotron Parallax -->
+			<div class="jumbotron-home tinted-bg text-center">
+				<div class="container">
+			
+					<h1 class="display-3">HI, MY NAME IS JUAN CORTES.</h1>
+					<p class="jParagraph">Programmer and Photographer</p>
+			
+					<!-- Social Media Buttons -->
+					<p>
+						<a class="btn btn-primary btn-lg" href="https://www.instagram.com/its.juancortes/" role="button" target="_blank">personal IG</a>
+						<a class="btn btn-primary btn-lg" href="https://www.instagram.com/photogenic.juan/" role="button" target="_blank">photography IG</a>
+						<a class="btn btn-primary btn-lg" href="https://www.youtube.com/channel/UC7wvxrc3ovMnXcN0kqb67fQ/featured" role="button" target="_blank">YouTube</a>
+					</p>
+					
+				</div>
 			</div>
+			<!--  -->
+			
+			<!-- About Section -->
+			<div class="container marketing home">
+				<div class="row featurette featurette-alignR">
+						<div class="col-md-7 order-md-2">
+							<h2 class="featurette-heading">ABOUT</h2>
+							<p class="lead home">
+								I am a 23 year old in love with Programming, Photography, and Jesus.
+								From a taking a basic programming class and my general interest in technology,
+								my love for Programming was sparked during my sophomore year in high school.
+								That said, I decided to attend Georgia State University and major in Computer
+								Science. I didn't get interested in Photography until the summer of 2016. That
+								summer I got the oppurtunity to go on a mission trip with my church to Costa
+								Rica where I took a lot of photos. From then on, my love for
+								Photography grew, and I decided to get a minor in Art (Photography).
+								<br><br>
+								Moving foward, I graduated from Georgia State University in May of 2020.
+							</p>
+						</div>
+						<div class="col-md-5 order-md-1">
+							<p class="text-center">
+								<!-- New Portrait -->
+								<img src="https://lh3.googleusercontent.com/V1kdmjY44uztBr_WTrmDARFClAWih9MlaStlOebukn3J-es7zpZYWQui9NfnbnohNlmfbumglxAPOT3nY1qdTaKrg7LglLWn6-lcOcefU08Ais0XPo3P7H1BhQB2GNwCpNeh8JHm5Q=w2400"
+									class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+									width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+							</p>
+						</div>
+				</div>
+			</div>
+			<!--  -->
+			
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="ftr">
+					<span class="float-right">
+						<a class="bck" href="#">Back to top</a>
+					</span>
+					<span>
+						&copy; 2020 by Juan Cortes.
+					</span>
+				</div>
+			</footer>
+			<!--  -->
 		</div>
-		<!--  -->
-
-		<!-- About Section -->
-		<div class="container marketing home">
-			<div class="row featurette featurette-alignR">
-					<div class="col-md-7 order-md-2">
-						<h2 class="featurette-heading">ABOUT</h2>
-						<p class="lead home">
-							I am a 23 year old in love with Programming, Photography, and Jesus.
-							From a taking a basic programming class and my general interest in technology,
-							my love for Programming was sparked during my sophomore year in high school.
-							That said, I decided to attend Georgia State University and major in Computer
-							Science. I didn't get interested in Photography until the summer of 2016. That
-							summer I got the oppurtunity to go on a mission trip with my church to Costa
-							Rica where I took a lot of photos. From then on, my love for
-							Photography grew, and I decided to get a minor in Art (Photography).
-							<br><br>
-							Moving foward, I graduated from Georgia State University in May of 2020.
-						</p>
-					</div>
-					<div class="col-md-5 order-md-1">
-						<p class="text-center">
-							<!-- New Portrait -->
-							<img src="https://lh3.googleusercontent.com/V1kdmjY44uztBr_WTrmDARFClAWih9MlaStlOebukn3J-es7zpZYWQui9NfnbnohNlmfbumglxAPOT3nY1qdTaKrg7LglLWn6-lcOcefU08Ais0XPo3P7H1BhQB2GNwCpNeh8JHm5Q=w2400"
-								class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-								width="400" height="400" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
-						</p>
-					</div>
-			</div>
-		</div>
-		<!--  -->
-
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="ftr">
-				<span class="float-right">
-					<a class="bck" href="#">Back to top</a>
-				</span>
-				<span>
-					&copy; 2020 by Juan Cortes.
-				</span>
-			</div>
-		</footer>
-		<!--  -->
 
 		<!-- Scripts -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js" integrity="sha512-53CQcu9ciJDlqhK7UD8dZZ+TF2PFGZrOngEYM/8qucuQba+a+BXOIRsp9PoMNJI3ZeLMVNIxIfZLbG/CdHI5PA==" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+		<script src="./JS/pre-loader.js"></script>
 		<script src="./JS/smooth-scroll.js"></script>
 		<!--  -->
 
