@@ -9,7 +9,7 @@ html {
 
 #loader {
 	background:
-		url('./Images/polaroid-snapping.gif')
+		url('./Images/polaroid-snapping-text.gif')
 		no-repeat center center;
     position: absolute;
     top: 0;
@@ -94,8 +94,9 @@ nav {
 	font-size: 1.7rem !important;
 }
 
-.navbar-brand {
-	font-size: 2.5rem;
+.signature {
+	width: 10rem;
+	height: 5rem;
 }
 
 .navbar-toggler-icon {
