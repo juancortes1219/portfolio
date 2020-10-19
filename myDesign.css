@@ -79,24 +79,30 @@ hr {
 /* --- --- */
 
 /* --- Navigation Bar --- */
+.signature {
+	width: 10rem;
+	height: 5rem;
+}
+
 nav {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	background-color: rgb(76, 122, 156);
+	font-family: 'Just Another Hand', cursive;
 
 	z-index: 1;
 }
 
 .navbar {
-	padding: 2rem;
+	padding: 3rem;
+	padding-right: 2rem;
 
-	font-size: 1.7rem !important;
+	font-size: 2.8rem !important;
 }
 
-.signature {
-	width: 10rem;
-	height: 5rem;
+.navbar-toggler {
+	padding-top: .9rem;
 }
 
 .navbar-toggler-icon {
@@ -106,6 +112,7 @@ nav {
 .navbar a {
 	transition: 0.4s;
 	color: #fefefe;
+	opacity: .8;
 }
 
 .navbar a:hover { 
@@ -118,8 +125,16 @@ nav {
 	color: rgb(228, 203, 154) !important;
 }
 
+.nav-item {
+	padding-right: 1rem;
+}
+
 .navbar-toggler-icon {
 	display: inline;
+}
+
+.dropdown-toggle::after {
+	margin-left: 0;
 }
 
 .dropdown-menu {
@@ -134,14 +149,14 @@ nav {
 	background-color: transparent;
 }
 
-.dropdown-item{
+.dropdown-item {
 	padding:.25rem 2rem !important;
-	font-size: 1.4rem !important;
+	font-size: 2.4rem !important;
 }
 
-.dropdown-item.p-menuItem{
+.dropdown-item.p-menuItem {
 	padding:.25rem 2rem !important;
-	font-size: 1.4rem !important;
+	font-size: 2.4rem !important;
 	color: #fefefe !important;
 }
 
@@ -406,6 +421,10 @@ footer {
 	.container {
 		max-width: 25rem;
 	}
+
+	.navbar-nav.ml-auto {
+		padding-top: 2.2rem;
+	}
 }
 	
 @media (max-width: 400px) {
@@ -416,6 +435,10 @@ footer {
 }
 
 @media (min-width: 576px) {
+	.navbar-nav.ml-auto {
+		padding-top: 0;
+	}
+
 	.dropdown-menu.p-menu {
 		width: auto;
 	}
